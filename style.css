@@ -1,0 +1,119 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-dark-blue:#007DB2;
+    --color-dark-grey: #707070;
+    --color-light-white: #F2F2F2;
+    --color-grey: #A4ADB3;
+    --color-blue: #009EE3;
+    --color-petrol: #0D5C7E;
+    --color-light-grey:#f8f4f4cb;
+    --color-navbar:rgb(1, 146, 194);
+   
+   /* Font size */
+   --font-large: 50px;
+   --font-medium: 30px;
+   --font-regular: 22px;
+   --font-reguar-small:20px;
+   --font-small: 14px;
+   --font-micro: 12px;
+ 
+   /* Font weight */
+   --weight-extra:800;
+   --weight-bold: 700;
+   --weight-semi-bold: 600;
+   --weight-regular: 400;
+   --weight-light: 300;
+ 
+ }
+ /* Universal tags */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;  
+  }
+  button{
+      background-color:transparent;
+      border: none;
+      outline: none;
+      color:var(--color-white);
+  }
+  /* Typography */
+  h2 {
+     font-size: var(--font-medium);
+    font-weight: var(--weight-bold); 
+  }
+  
+  h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+  }
+  h4{
+    font-size: var(--font-regular-small);
+    font-weight: var(--weight-light);
+  }
+  h5{
+    font-size: var(--font-micro);
+  }
+  
+  p {
+    font-size: var(--font-micro);
+    /* font-weight: var(--font-light); */
+
+  }
+  /* Navbar */
+#navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: var(--color-navbar);
+    background: linear-gradient(to right, var(--color-navbar) , rgb(1, 175, 232));
+    padding: 0 16px;
+   
+}
+
+.navbar__logo{
+    display:flex;
+    align-items:center;
+}
+.navbar__vertical__line{
+    height:30px;
+    border-left:2px solid var(--color-blue);
+    padding-right: 5px;
+}
+.navbar__name{
+    color: var(--color-white);
+    display: flex;  
+    align-items:center; 
+}
+.navbar__name span{
+    font-size: var(--font-regular);
+    font-weight:100;
+    font-family:sans-serif;
+    color:var(--color-light-grey);
+
+}
+.navbar__toogle-box{
+    border:1px solid var(--color-white);
+    width:100px;
+    height:35px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:var(--color-white);
+    padding: 0px 15px;
+   
+}
+
+
+
+  
