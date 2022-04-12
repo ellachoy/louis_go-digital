@@ -11,73 +11,66 @@
     --color-petrol: #0D5C7E;
     --color-light-grey:#f8f4f4cb;
     --color-navbar:rgb(1, 146, 194);
-   
+
    /* Font size */
-   --font-large: 50px;
-   --font-medium: 30px;
-   --font-regular: 22px;
-   --font-reguar-small:20px;
-   --font-small: 14px;
-   --font-micro: 12px;
- 
+    --font-large: 50px;
+    --font-medium: 30px;
+    --font-regular: 22px;
+    --font-reguar-small:20px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
    /* Font weight */
-   --weight-extra:800;
-   --weight-bold: 700;
-   --weight-semi-bold: 600;
-   --weight-regular: 400;
-   --weight-light: 300;
- 
- }
+    --weight-extra:800;
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+    --weight-light: 300;
+}
  /* Universal tags */
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+body {
     font-family: 'Open Sans', sans-serif;
     background-color:var(--color-light-white);
     margin: 0;
-  }
-  
-  a {
+}
+a {
     text-decoration: none;  
-  }
-  button{
-      background-color:transparent;
-      border: none;
-      outline: none;
-      color:var(--color-white);
-  }
+}
+button{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    color:var(--color-white);
+}
   /* class Section common */
 .section {
     padding:0 100px;
-  }
-  
+}
   /* Typography */
-  h2 {
-     font-size: var(--font-medium);
+h2 {
+    font-size: var(--font-medium);
     font-weight: var(--weight-bold); 
-  }
-  
-  h3 {
+}
+h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
-  }
-  h4{
+}
+h4{
     font-size: var(--font-regular-small);
     font-weight: var(--weight-light);
-  }
-  h5{
+}
+h5{
     font-size: var(--font-micro);
     font-weight: var(--weight-light);
-  }
-  
-  p {
+}
+p {
     font-size: var(--font-micro);
     /* font-weight: var(--font-light); */
+}
 
-  }
-  
   /* Navbar */
 #navbar{
     /* position: fixed;
@@ -108,7 +101,7 @@
     height:23px;
     border-left:2px solid var(--color-blue);
     margin:0 4px 0 2px;
-  
+
 }
 .navbar__name{
     color: var(--color-white);
@@ -138,16 +131,14 @@
     margin-right: 18px;
 }
 .navbar__toggle_home{
- font-family: open sans;
- font-size: 9px;
-}
+    font-family: open sans;
+    font-size: 9px;
+    }
 .navbar__toggle-btn{
     font-size: var(--font-micro);
     font-weight: var(--weight-light); 
-  
 }
  /* main (von der Aufgabe) aktuelles seite  */
- 
 .aktuelles__containers{
     display:flex;
     justify-content: space-evenly;   
@@ -215,32 +206,30 @@
   background-color: var(--color-petrol);
   margin:17px auto ;
 }
- .reference__value {
-     width:45%;
-     height:2.3px;
-     background-color: var(--color-blue);
+.reference__value {
+    width:45%;
+    height:2.3px;
+    background-color: var(--color-blue);
     margin:0 auto;
- }
- .reference__companie{
-     display:flex;
-     justify-content:space-between;
-     color:var(--color-white); 
-      
- }
- .reference__description{
-     width:60%;
-     text-align:start; 
- }
- .reference__description :first-child{
+}
+.reference__companie{
+    display:flex;
+    justify-content:space-between;
+    color:var(--color-white); 
+}
+.reference__description{
+    width:60%;
+    text-align:start; 
+}
+.reference__description :first-child{
     font-size:var(--font-small); 
     margin:0;
     /* color:pink; */
- }
- .reference__description :last-child{
+}
+.reference__description :last-child{
     font-size:10px; 
-    margin: 15px 0;
-    
- }
+    margin: 15px 0;   
+}
 .reference__person{
     text-align:right;
     margin:0;
@@ -249,11 +238,10 @@
     font-size:9px;
     padding:15px 0 0 0;
     margin-bottom: 0;
- 
 }
 .reference__person :nth-child(2){
     font-size:9px;
-     margin-top: 0;
+    margin-top: 0;
 }
 .reference__person :last-child{
     width:35%;
@@ -264,7 +252,7 @@
 .chatbox{
     position:fixed;
     left: 30px;
-   bottom:152px;
+    bottom:152px;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -272,7 +260,6 @@
     background-color: var(--color-blue);
     margin:0;
     padding:0;
-   
 }
 .chatbox :nth-child(1){
     font-size: 10px;
@@ -300,61 +287,59 @@
     50%  {margin-bottom:-50%;opacity: -50;}
     75%  {margin-bottom:-25%; opacity: -0;}
     100% {margin-bottom:0%;opacity: 1;}
-  }
-  
+}
 
 /* @keyframes modal {
     from {
         margin-bottom: -100%;
         opacity: -50;
         transform: translateY(10px);
-      }
+    }
     
-      to {
+    to {
         margin-top: 100%;
         opacity: 1;
         transform: translateX(0px);
-      }
+    }
   } */
-  .animation--modal__icon-x{  
-      text-align:right;
-  }
-  .animation--modal__icon-x :first-child{
-      width:10%;
-      color:var(--color-blue);  
-  }
-  .animation--modal__go-digital{
-      padding:0 15px 0 0;
-  }
-  .animation--modal__go-digital__img{
+.animation--modal__icon-x{  
+    text-align:right;
+}
+.animation--modal__icon-x :first-child{
+    width:10%;
+    color:var(--color-blue);  
+}
+.animation--modal__go-digital{
+    padding:0 15px 0 0;
+}
+.animation--modal__go-digital__img{
     width:50%;
-  }
-  .animation--modal__title{
-      color:var(--color-white);
-      background-color:var(--color-blue);
-      font-size:19px;
-     padding:7px 0 7px 10px;
-     margin:10px 0;
-  }
-  .animation--modal__go-digital :nth-child(2){
-      /* color:yellow; */
-      width:85%;
-  }
-  .animation--modal__go-digital :nth-child(3){
+}
+.animation--modal__title{
+    color:var(--color-white);
+    background-color:var(--color-blue);
+    font-size:19px;
+    padding:7px 0 7px 10px;
+    margin:10px 0;
+}
+.animation--modal__go-digital :nth-child(2){
+    width:85%;
+}
+.animation--modal__go-digital :nth-child(3){
     width:55%;
-  }
-  .animation--modal__go-digital :nth-child(4){
+}
+.animation--modal__go-digital :nth-child(4){
     width:90%;
-  }
-  .animation--modal__title__mddle{
-     font-size:13px;
-      font-weight:var(--weight-bold);
-      margin:13px 0;
-  }
-  .animation--modal__text{
-      color:var(--color-grey);
-      font-size:10px;
-  }
+}
+.animation--modal__title__mddle{
+    font-size:13px;
+    font-weight:var(--weight-bold);
+    margin:13px 0;
+}
+.animation--modal__text{
+    color:var(--color-grey);
+    font-size:10px;
+}
 .more__info--btn{
     background-color: var(--color-black); 
     font-size: 9px;
@@ -373,16 +358,3 @@
     height:5%;
 }
 
-/* For mobile 768px screen width */
-:root {
-    /* Font size */
-    --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 10px;
-    --font-micro: 8px;
-  }
-  .section {
-    padding: 16px;
-    padding-top: 40px;
-  }
