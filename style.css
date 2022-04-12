@@ -80,13 +80,19 @@
   
   /* Navbar */
 #navbar{
+    /* position: fixed;
+    top:20px; */
+    position: absolute;
+    top:18px;
+    left:17px;
+    right:20px; 
     display:flex;
     justify-content:space-between;
     align-items:center;
     background-color: var(--color-navbar);
     background: linear-gradient(to right, var(--color-navbar) , rgb(1, 175, 232));
-    padding: 0 12px 0 8px;
-    margin:0 17px; 
+    /* padding: 0 22px 0 8px; */
+    /* margin:0 17px ;  */
    
 
 }
@@ -94,6 +100,7 @@
     display:flex;
     align-items:center;
     font-family:sans-serif; 
+    padding: 0 22px 0 8px; 
 }
 .navbar__logo__img{
     width:15%;
@@ -123,7 +130,6 @@
 }
 .navbar__toggle-box{
     border:1px solid var(--color-white);
-  
     border-radius:1px;
     width:80px;
     height:30px;
@@ -131,6 +137,7 @@
     justify-content: space-evenly;
     align-items:center;
     color:var(--color-white); 
+    margin-right: 18px;
 }
 .navbar__toggle_home{
  font-family: open sans;
@@ -138,7 +145,8 @@
 }
 .navbar__toggle-btn{
     font-size: var(--font-micro);
-    font-weight: var(--weight-light);  
+    font-weight: var(--weight-light); 
+  
 }
  /* main (von der Aufgabe) aktuelles seite  */
  
@@ -147,11 +155,11 @@
     justify-content: space-evenly;   
 }
 .aktuelles__info{
-    width:25%;
+    width:22%;
     height:30vh;
     border:1px solid white;
-    padding:0 17px;
-    margin:0 10px;
+    padding:0 13px;
+    margin:0 9px;
     background-color:white;
 }
 .aktuelles__info img{
@@ -189,15 +197,12 @@
 #reference__container{
     background: url('imgs/Digitalisierung.jpeg') center/cover no-repeat;
     opacity: 0.9;
-    text-align: center;
-    
+    text-align: center;   
 }
 .reference__title{
    color:var(--color-blue);
    padding-top: 70px;
    margin-bottom:0;
-
- 
 }
 .reference__radios i {
     color:var(--color-blue);
@@ -234,7 +239,7 @@
  }
  .reference__description :last-child{
     font-size:10px; 
-    margin: 15px 0 30px 0;
+    margin: 15px 0 40px 0;
     /* color:yellow; */
  }
 .reference__person{
@@ -243,6 +248,7 @@
 }
 .reference__person :first-child{
     font-size:9px;
+    padding:15px 0 0 0;
     margin-bottom: 0;
  
 }
@@ -258,7 +264,7 @@
 .chatbox{
     position:absolute;
     left: 30px;
-    bottom: 91px;
+   bottom:141px;
     display:flex;
     justify-content: space-between;
     align-items:center;
