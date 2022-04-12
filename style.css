@@ -196,6 +196,7 @@
 /* Customer References */
 #reference__container{
     background: url('imgs/Digitalisierung.jpeg') center/cover no-repeat;
+    height:32vh;
     opacity: 0.9;
     text-align: center;   
 }
@@ -239,8 +240,7 @@
  }
  .reference__description :last-child{
     font-size:10px; 
-    margin: 15px 0 40px 0;
-    /* color:yellow; */
+    margin: 15px 0 10px 0;
  }
 .reference__person{
     text-align:right;
@@ -258,13 +258,13 @@
 }
 .reference__person :last-child{
     width:35%;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 .chatbox{
-    position:absolute;
+    position:fixed;
     left: 30px;
-   bottom:141px;
+   bottom:223px;
     display:flex;
     justify-content: space-between;
     align-items:center;
