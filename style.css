@@ -93,8 +93,6 @@
     background: linear-gradient(to right, var(--color-navbar) , rgb(1, 175, 232));
     /* padding: 0 22px 0 8px; */
     /* margin:0 17px ;  */
-   
-
 }
 .navbar__logo{
     display:flex;
@@ -196,7 +194,7 @@
 /* Customer References */
 #reference__container{
     background: url('imgs/Digitalisierung.jpeg') center/cover no-repeat;
-    height:32vh;
+    height: 36vh;
     opacity: 0.9;
     text-align: center;   
 }
@@ -240,7 +238,8 @@
  }
  .reference__description :last-child{
     font-size:10px; 
-    margin: 15px 0 10px 0;
+    margin: 15px 0;
+    
  }
 .reference__person{
     text-align:right;
@@ -261,10 +260,11 @@
     margin-top: 1px;
 }
 
+/* add. chatbox & annimation modal */
 .chatbox{
     position:fixed;
     left: 30px;
-   bottom:223px;
+   bottom:152px;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -283,3 +283,106 @@
     font-size: 10px;
     padding:0 10px 0 40px;
 }
+
+#animation--modal{
+    padding:10px 10px 25px 25px;
+    position: absolute;
+    right:15px;
+    bottom:152px;
+    width: 297px;
+    height: 485px;
+    background-color:var(--color-white);
+    /* animation: modal 1.5s linear; */
+}
+@keyframes modal {
+    0%   {margin-bottom:-100%; opacity: -100;}
+    25%  {margin-bottom:-75%; opacity: -75}
+    50%  {margin-bottom:-50%;opacity: -50;}
+    75%  {margin-bottom:-25%; opacity: -0;}
+    100% {margin-bottom:0%;opacity: 1;}
+  }
+  
+
+/* @keyframes modal {
+    from {
+        margin-bottom: -100%;
+        opacity: -50;
+        transform: translateY(10px);
+      }
+    
+      to {
+        margin-top: 100%;
+        opacity: 1;
+        transform: translateX(0px);
+      }
+  } */
+  .animation--modal__icon-x{  
+      text-align:right;
+  }
+  .animation--modal__icon-x :first-child{
+      width:10%;
+      color:var(--color-blue);  
+  }
+  .animation--modal__go-digital{
+      padding:0 15px 0 0;
+  }
+  .animation--modal__go-digital__img{
+    width:50%;
+  }
+  .animation--modal__title{
+      color:var(--color-white);
+      background-color:var(--color-blue);
+      font-size:19px;
+     padding:7px 0 7px 10px;
+     margin:10px 0;
+  }
+  .animation--modal__go-digital :nth-child(2){
+      /* color:yellow; */
+      width:85%;
+  }
+  .animation--modal__go-digital :nth-child(3){
+    width:55%;
+  }
+  .animation--modal__go-digital :nth-child(4){
+    width:90%;
+  }
+  .animation--modal__title__mddle{
+     font-size:13px;
+      font-weight:var(--weight-bold);
+      margin:13px 0;
+  }
+  .animation--modal__text{
+      color:var(--color-grey);
+      font-size:10px;
+  }
+.more__info--btn{
+    background-color: var(--color-black); 
+    font-size: 9px;
+    font-weight: var(--weight-bold);
+    padding:12px;
+    margin:10px 0 10px 0;   
+}
+.more__info--arrow {
+    position: absolute;
+    left: 19px;
+    bottom: 27px;
+    font-size: 8px; 
+}
+.more__info--arrow img{
+    width: 13.5%;
+    height:5%;
+}
+
+/* For mobile 768px screen width */
+:root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 10px;
+    --font-micro: 8px;
+  }
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
