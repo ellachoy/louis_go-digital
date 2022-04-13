@@ -358,3 +358,51 @@ p {
     height:5%;
 }
 
+/* For below 768px screen width*/
+
+@media screen and (max-width: 768px){
+    :root {
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 14px;
+        --font-small: 10px;
+        --font-micro: 8px;
+    }
+ 
+    #navbar{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+    }
+    .navbar__toggle-box{
+        width:30px;
+        height:30px; 
+    }
+    .navbar__toggle_home{
+     display:none;
+    }
+    .navbar__toggle-btn{
+        font-size: var(--font-small);
+    }
+    .section {
+        padding:0 25px;
+       
+    }
+    .aktuelles__containers{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+    .aktuelles__info{
+        width:80%;
+        height:55%;
+        margin:5px 5px;    
+    }
+    .aktuelles__info img{
+        width:50%;
+    }
+    
+   
+}
