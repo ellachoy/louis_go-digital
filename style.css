@@ -85,7 +85,8 @@ p {
     align-items:center;
     background-color: var(--color-navbar);
     background: linear-gradient(to right, var(--color-navbar) , rgb(1, 175, 232));
-   padding:6px 0;
+    /* padding: 0 22px 0 8px; */
+    /* margin:17px 0 ;  */
     z-index: 1;
 }
 .navbar__logo{
@@ -95,11 +96,11 @@ p {
     padding: 0 22px 0 8px; 
 }
 .navbar__logo__img{
-    width:17%;
-    height:22%;
+    width:15%;
+    height:20%;
 }
 .navbar__vertical__line{
-    height:30px;
+    height:23px;
     border-left:2px solid var(--color-blue);
     margin:0 4px 0 2px;
 
@@ -115,7 +116,7 @@ p {
     font-weight: var(--weight-regular);
 }
 .navbar__name span{
-    font-size: var(--font-regular);
+    font-size: var(--font-regular-small);
     font-weight:100;
     font-family:sans-serif;
     color:var(--color-light-grey);
@@ -124,7 +125,7 @@ p {
     border:1px solid var(--color-white);
     border-radius:1px;
     width:80px;
-    height:35px;
+    height:30px;
     display:flex;
     justify-content: space-evenly;
     align-items:center;
@@ -133,10 +134,10 @@ p {
 }
 .navbar__toggle_home{
     font-family: open sans;
-    font-size: var(--font-micro);
+    font-size: 9px;
     }
 .navbar__toggle-btn{
-    font-size: var(--font-small);
+    font-size: var(--font-micro);
     font-weight: var(--weight-light); 
 }
 
@@ -157,36 +158,35 @@ p {
     background-color:white; 
 }
 .aktuelles__info img{
-    width:100%;
+    width:90%;
 }
 .info__title{
     color:var(--color-grey);
-    /* font-size:16px; */
+    font-size:16px;
     font-weight: var(--weight-light);
     font-family:sans-serif;
     margin:10px auto ;
 }
 .info__text{
     color:var(--color-dark-grey);
-    /* font-size: 10px; */
+    font-size: 10px;
 }
 /* RSS Feed */
 #rss-feed{
     display:flex;
     justify-content: center;
-    align-items:center;
 }
 #rss-feed .rss--abo{
     background-color: var(--color-black); 
-    font-size:var(--font-size-micro);
+    font-size: 9px;
     font-weight: var(--weight-bold);
-    padding:12px 14px;
+    padding:10px;
     margin:30px 0;   
 }
-.rss--reader img{
-   width:132%;
-    /* margin:12px 0; */
-    /* padding:0 2px; */
+.rss--reader{
+    font-size: 5px;
+    margin:30px 0;
+    padding:0 1.5px;
 }
 /* Customer References */
 #reference__container{
@@ -227,16 +227,16 @@ p {
     text-align:start; 
 }
 .reference__description :first-child{
-    /* font-size:var(--font-small);  */
+    font-size:var(--font-small); 
     margin:0;
     /* color:pink; */
 }
 .reference__description :last-child{
-    /* font-size:10px;  */
+    font-size:10px; 
     margin: 15px 0 0 0;   
 }
 .reference__description :last-child span{
-    /* font-size:17px; */
+    font-size:17px;
     font-weight:var(--weight-bold);
 }
 .reference__person{
@@ -244,12 +244,12 @@ p {
     margin:0;
 }
 .reference__person :first-child{
-    /* font-size:9px; */
+    font-size:9px;
     padding:15px 0 0 0;
     margin-bottom: 0;
 }
 .reference__person :nth-child(2){
-    /* font-size:9px; */
+    font-size:9px;
     margin-top: 0;
 }
 .reference__person :last-child{
@@ -272,12 +272,12 @@ p {
     padding:0;
 }
 .chatbox :nth-child(1){
-    /* font-size: 10px; */
+    font-size: 10px;
     font-weight: var(--weight-bold);
     margin:10px 30px 10px 10px; 
 }
 .chatbox :nth-child(2){
-    /* font-size: 10px; */
+    font-size: 10px;
     padding:0 10px 0 40px;
 }
 .chatbox :nth-child(3){
@@ -306,7 +306,7 @@ p {
     text-align:right;
 }
 .animation--modal__icon-x :first-child{
-    width:15%;
+    width:10%;
     color:var(--color-blue);  
 }
 .animation--modal__go-digital{
@@ -318,7 +318,7 @@ p {
 .animation--modal__title{
     color:var(--color-white);
     background-color:var(--color-blue);
-    /* font-size:19px; */
+    font-size:19px;
     padding:7px 0 7px 10px;
     margin:10px 0;
 }
@@ -332,17 +332,17 @@ p {
     width:90%;
 }
 .animation--modal__title__mddle{
-    /* font-size:13px; */
+    font-size:13px;
     font-weight:var(--weight-bold);
     margin:13px 0;
 }
 .animation--modal__text{
     color:var(--color-grey);
-    /* font-size:10px; */
+    font-size:10px;
 }
 .more__info--btn{
     background-color: var(--color-black); 
-    /* font-size: 9px; */
+    font-size: 9px;
     font-weight: var(--weight-bold);
     padding:12px;
     margin:10px 0 10px 0;   
@@ -351,7 +351,7 @@ p {
     position: absolute;
     left: 19px;
     bottom: 27px;
-    /* font-size: 8px;  */
+    font-size: 8px; 
 }
 .more__info--arrow img{
     width: 13.5%;
@@ -365,7 +365,7 @@ p {
         width: 100%;
         position: fixed;
         top:0;
-        left:0;    
+        left:0;   
     }
     .navbar__toggle-box{
         width:30px;
